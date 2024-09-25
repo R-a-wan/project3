@@ -1,3 +1,23 @@
+void board()
+{
+    system("cls");
+    cout<<"\n\n Tic Tac Toe game \n\n";
+    cout<<"Player 1(X) Player 2(O)";
+
+    cout<<"   |   |   "<<endl;
+    cout<<square[1]<<" | "<<square[2]<<" | "<<square[3]<<endl;
+    cout<<"___|___|___"<<endl;
+    cout<<"   |   |   "<<endl;
+    cout<<square[4]<<" | "<<square[5]<<" | "<<square[6]<<endl;
+    cout<<"___|___|___"<<endl;
+    cout<<"   |   |   "<<endl;
+    cout<<square[7]<<" | "<<square[8]<<" | "<<square[9]<<endl;
+    cout<<"___|___|___"<<endl;
+    cout<<"   |   |   "<<endl;
+
+}
+
+
 int checkwin()
 {
     if(square[1] == square[2] && square[2]== square[3])
