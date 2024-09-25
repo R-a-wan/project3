@@ -74,15 +74,15 @@ int main()
 
         i = checkwin();
         player++;
-    }while(i == -1);
+    }while(i == -1);//still playing
 
     board();
-    if(i == 1)
+    if(i == 1)//game has ended
     {
         cout<<"\aCongratulations! Player "<< --player<<" WINS!";
         
     }
-    else{
+    else{ //if the game state is undefined or the user didn't enter a choice
         cout<<"computer game\n";
         do{
         choice = random(1,9);
