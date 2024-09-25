@@ -8,13 +8,14 @@ mt19937 gen(rd());
 
 char square[10] = {'0','1','2','3','4','5','6','7','8','9'};
 
-//Function to return the game status
+
 int random(int low, int high)
 {
     uniform_int_distribution<> dist(low, high);
     return dist(gen);
 }
 
+board();
 /*
 system("cls");
 It is used to pass the commands that can be executed in the command processor or the terminal of the operating system,
@@ -79,6 +80,7 @@ int main()
     if(i == 1)
     {
         cout<<"\aCongratulations! Player "<< --player<<" WINS!";
+        
     }
     else{
         cout<<"computer game\n";
